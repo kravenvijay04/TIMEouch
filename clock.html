@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clock</title>
+</head>
+<style>
+    body{
+    margin:0;
+    padding:0;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,98,121,1) 35%, rgba(0,212,255,1) 100%);
+}
+
+#container{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:white;
+    display:flex;
+    width:100vw;
+    height:100vh; 
+    align-items: center;
+    justify-content: center;  
+    font-size: 5rem;
+}
+
+#wrapper{
+    border: 3px solid white;
+    padding:1rem;
+}
+
+#container span{
+    margin-left:10px;
+}
+
+#ampm{
+    font-size:3rem;
+    align-items: end;
+}  
+</style>
+<body>
+    <div id="container">
+        <div id="wrapper">
+            <span id="hr">00</span>
+            <span>:</span>
+            <span id="min">00</span>
+            <span>:</span>
+            <span id="sec">00</span>
+            <span id="ampm">'AM'</span>
+        </div>
+    </div>
+<script>
+
+function addzero(num){
+    return num<10?"0"+num:num
+}
+setInterval(()=>{let clock = new Date();
+            let ampm = document.getElementById('ampm')
+            let hr = clock.getHours();
+            let min = addzero(clock.getMinutes());
+            let sec = addzero(clock.getSeconds());
+            if (hr>12){
+                hr-=12;
+                ampm.innerHTML='PM'
+            }
+            document.getElementById("hr").innerHTML=addzero(hr);
+            document.getElementById("min").innerHTML=min;
+            document.getElementById("sec").innerHTML=sec;
+            
+        },500)
+
+</script>
+</body>
+</html>
