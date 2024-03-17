@@ -9,4 +9,10 @@
     font-weight: 400;
     font-style: normal;
   }
+
+.start-active,
+.stop-active{
+    pointer-events: none;
+    opacity:0.5;
+}
   
