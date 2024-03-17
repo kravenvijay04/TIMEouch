@@ -13,6 +13,48 @@
 .start-active,
 .stop-active{
     pointer-events: none;
-    opacity:0.5;
 }
+.container{
+    display: flex;
+    width:100vw;
+    height:100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+#wrap{
+    background-color:#8e44ad;
+    font-size: 50px;
+    padding: 20px;
+    border-radius: 20px;
+    color: white;
+    padding: 100px;
+    border-radius: 100%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    padding-left: 5%;
+    padding-right: 5%;  
+}
+.buttonwrapper{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 10px;
+}
+
+button{
+    background-color: #8e44ad;
+    border: solid 2px white;
+    color: white;
+    font-size: 20px;
+    padding: 8px;
+    border-radius: 3px;
+    transition: 0.4s;
+    cursor: pointer;
+}
+button:hover{
+    color:#8e44ad;
+    background-color: white;
+}
+
   
