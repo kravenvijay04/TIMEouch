@@ -50,7 +50,6 @@
         </div>
     </div>
 <script>
-
 function addzero(num){
     return num<10?"0"+num:num
 }
@@ -65,10 +64,8 @@ setInterval(()=>{let clock = new Date();
             }
             document.getElementById("hr").innerHTML=addzero(hr);
             document.getElementById("min").innerHTML=min;
-            document.getElementById("sec").innerHTML=sec;
-            
-        },500)
-
+            document.getElementById("sec").innerHTML=sec;}
+,500)
 </script>
 </body>
 </html>
