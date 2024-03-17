@@ -1,0 +1,12 @@
+
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+.nova-round-regular {
+    font-family: "Nova Round", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
